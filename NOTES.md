@@ -19,3 +19,9 @@ You can make component as usual like in CRA
 
 Use `Link` component provided by Next.js to make a link that goes inside the website domain.
 import the `Link` component from `next/link`.
+
+## Layout component
+
+It's good idea to make a component that have repeated component in every pages. It's called Layout component
+Layout component file contain the component that will be rendered and a `{ children }` props.
+Wrap the `<Component />` in \_app.js with Layout component

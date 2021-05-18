@@ -9,7 +9,6 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <div>
-      <Navbar />
       <h1>Homepage</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corporis
@@ -24,7 +23,6 @@ export default function Home() {
         deleniti, quis distinctio?
       </p>
       <Link href="/staffs">See staffs list</Link>
-      <Footer />
     </div>
   );
 }
