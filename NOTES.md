@@ -24,4 +24,10 @@ import the `Link` component from `next/link`.
 
 It's good idea to make a component that have repeated component in every pages. It's called Layout component
 Layout component file contain the component that will be rendered and a `{ children }` props.
-Wrap the `<Component />` in \_app.js with Layout component
+Wrap the `<Component />` in app.js with Layout component
+
+## styled-component in Next.js
+
+You can add/install directly styled-component if you're using SSG Next.js.
+For SSR look a this [example](https://github.com/vercel/next.js/tree/canary/examples/with-styled-components)
+provided by Next.js

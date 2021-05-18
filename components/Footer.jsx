@@ -1,7 +1,8 @@
 import React from "react";
+import { Footer as FooterWrapper } from "../styles/styledComponents";
 
 const Footer = () => {
-  return <div>Copyright 2021</div>;
+  return <FooterWrapper>Copyright 2021</FooterWrapper>;
 };
 
 export default Footer;

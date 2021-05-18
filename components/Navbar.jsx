@@ -1,16 +1,24 @@
 import React from "react";
 import Link from "next/link";
+// styled components
+import { NavLink, NavWrapper, NavLogo } from "../styles/styledComponents";
 
 const Navbar = () => {
   return (
-    <nav>
-      <div>
+    <NavWrapper>
+      <NavLogo>
         <h1>Basic List</h1>
-      </div>
-      <Link href="/">Home</Link>
-      <Link href="/about">About</Link>
-      <Link href="/staffs">Staffs</Link>
-    </nav>
+      </NavLogo>
+      <Link href="/">
+        <NavLink>Home</NavLink>
+      </Link>
+      <Link href="/about">
+        <NavLink>About</NavLink>
+      </Link>
+      <Link href="/staffs">
+        <NavLink>Staffs</NavLink>
+      </Link>
+    </NavWrapper>
   );
 };
 
