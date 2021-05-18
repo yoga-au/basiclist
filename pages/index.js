@@ -2,9 +2,13 @@
 // import Image from "next/image";
 // import styles from "../styles/Home.module.css";
 
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+
 export default function Home() {
   return (
     <div>
+      <Navbar />
       <h1>Homepage</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corporis
@@ -18,6 +22,7 @@ export default function Home() {
         illo laborum ipsum atque, sit ratione suscipit architecto magnam
         deleniti, quis distinctio?
       </p>
+      <Footer />
     </div>
   );
 }
