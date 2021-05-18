@@ -14,3 +14,8 @@ URL link for index of subpage `https://website.com/[foldername]`
 
 To make a component that is not pages component, you can define it outside `pages` folder.
 You can make component as usual like in CRA
+
+## Internal link
+
+Use `Link` component provided by Next.js to make a link that goes inside the website domain.
+import the `Link` component from `next/link`.
