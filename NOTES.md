@@ -36,3 +36,10 @@ provided by Next.js<br>
 ## Custom 404 pages
 
 To make a custom 404, you can just create `404.js` pages component in `pages` folder root
+
+## Redirecting users
+
+`useRouter` hooks from `next/router` can be used to redirect users.
+Two method can be use to redirect user are `.go` and `.push`.
+`go` method will move users in between browser history.
+`push` method accept string that is a url to page you want to redirect
