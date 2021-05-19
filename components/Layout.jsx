@@ -1,15 +1,17 @@
 import React from "react";
-
+// import component
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+// styled component
+import { LayoutWrapper } from "../styles/styledComponents";
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <LayoutWrapper>
       <Navbar />
       {children}
       <Footer />
-    </div>
+    </LayoutWrapper>
   );
 };
 

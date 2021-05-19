@@ -30,4 +30,9 @@ Wrap the `<Component />` in app.js with Layout component
 
 You can add/install directly styled-component if you're using SSG Next.js.
 For SSR look a this [example](https://github.com/vercel/next.js/tree/canary/examples/with-styled-components)
-provided by Next.js
+provided by Next.js<br>
+**Correction**: You need to SSR if using styled-component.
+
+## Custom 404 pages
+
+To make a custom 404, you can just create `404.js` pages component in `pages` folder root

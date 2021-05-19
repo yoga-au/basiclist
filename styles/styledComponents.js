@@ -57,3 +57,8 @@ export const Homepage = {
     text-align: center;
   `,
 };
+
+export const BackLink404 = styled(TextLink)`
+  color: #4979ff;
+  text-decoration: underline;
+`;
