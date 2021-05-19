@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 // styled components
 import { NavLink, NavWrapper, NavLogo } from "../styles/styledComponents";
 
@@ -7,7 +8,7 @@ const Navbar = () => {
   return (
     <NavWrapper>
       <NavLogo>
-        <h1>Basic List</h1>
+        <Image src="/logo.png" width={128} height={77} />
       </NavLogo>
       <Link href="/">
         <NavLink>Home</NavLink>

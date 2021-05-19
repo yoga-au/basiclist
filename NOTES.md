@@ -43,3 +43,8 @@ To make a custom 404, you can just create `404.js` pages component in `pages` fo
 Two method can be use to redirect user are `.go` and `.push`.
 `go` method will move users in between browser history.
 `push` method accept string that is a url to page you want to redirect
+
+## Images and Metadata
+
+Use `Images` component provided by `next/image` to use Next.js image optimization. **Required** to pass `width` and height props.
+Use `Head` component provided by `next/head` to insert any `<head>` element to a component/pages
