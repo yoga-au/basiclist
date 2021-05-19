@@ -48,3 +48,9 @@ Two method can be use to redirect user are `.go` and `.push`.
 
 Use `Images` component provided by `next/image` to use Next.js image optimization. **Required** to pass `width` and height props.
 Use `Head` component provided by `next/head` to insert any `<head>` element to a component/pages
+
+## Fetching data (getStaticProps)
+
+For fetching data in Next.js you can export a function called `getStaticProps` which is a async function.
+Get static props will run on the build time which is good for SSG.
+You can only use `getStaticProps` in pages component.
