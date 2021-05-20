@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import axios from "axios";
 import styled from "styled-components";
+import Link from "next/link";
 
 // we need to export getStaticProps to fetch data at buildtime
 export const getStaticProps = async () => {
@@ -27,6 +28,7 @@ const StaffLink = styled.a`
   display: block;
   margin: 20px 10px 20px 0;
   border-left: 8px solid #fff;
+  cursor: pointer;
 
   &:hover {
     border-left: 8px solid #4979ff;
@@ -45,11 +47,12 @@ const Staffs = ({ staffs }) => {
         <h1>Staff list</h1>
         {staffs.map(({ id, name }) => {
           return (
-            <div key={id}>
+            // use a href that contain parameter you want pass to the specific pages
+            <Link href={`staffs/${id}`} key={id}>
               <StaffLink>
                 <h3>{name}</h3>
               </StaffLink>
-            </div>
+            </Link>
           );
         })}
       </div>

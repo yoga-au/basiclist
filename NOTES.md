@@ -54,3 +54,32 @@ Use `Head` component provided by `next/head` to insert any `<head>` element to a
 For fetching data in Next.js you can export a function called `getStaticProps` which is a async function.
 Get static props will run on the build time which is good for SSG.
 You can only use `getStaticProps` in pages component.
+
+## Dynamic routes
+
+To make dynamic route similiar to url parameters, name your template file wrapped it square bracket `location/[params]`.
+use Link that have href of `locaction/[params you want to pass]` in the parent pages of the specific pages
+
+## getStaticPaths
+
+getStaticPaths is a function that run at buildtime and is async function, it will fetch all data and all parameters in this function
+and then it will return to Next.js for make a specific data and pages.
+
+The required return value for getStaticPahts are
+
+```js
+return {
+  paths: [
+    { params: { [paramater]: value } }, // object with params key are required, [parameter] must the same as the name pass in [name].js
+  ], // required array of object
+};
+```
+
+The paths key determines which paths will be pre-rendered. Then Next.js will statically generate somelink/1 and somelink/2 at build time using the page component in somelink/[params].js.<br>
+**Note** that the value for each params must match the parameters used in the page name.
+
+## Fetching single data
+
+After you send a collection of params from getStaticPaths, to fetch the individual data you can export getStaticProps function.
+Accept a parameter called context coming from getStaticPaths `getStaticProps(context)` and use it to get the url param.
+And then fetch the single data using the url param from context
